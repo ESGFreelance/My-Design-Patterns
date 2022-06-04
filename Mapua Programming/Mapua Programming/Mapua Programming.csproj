@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ADAC680-5879-466F-BB4F-38E0E7E6FE16}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mapua_Programming</RootNamespace>
+    <AssemblyName>Mapua Programming</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1. Basic\Student.cs" />
+    <Compile Include="2. Aggregation\Address.cs" />
+    <Compile Include="2. Aggregation\Employee.cs" />
+    <Compile Include="3. Inheritance\Driver.cs" />
+    <Compile Include="3. Inheritance\Name.cs" />
+    <Compile Include="3. Inheritance\Person.cs" />
+    <Compile Include="4. Interface\Classes\CourseProductModel.cs" />
+    <Compile Include="4. Interface\Classes\CustomerModel.cs" />
+    <Compile Include="4. Interface\Classes\DigitalProductModel.cs" />
+    <Compile Include="4. Interface\Classes\PhysicalProductModel.cs" />
+    <Compile Include="4. Interface\Interfaces\ICustomerModel.cs" />
+    <Compile Include="4. Interface\Interfaces\IDigitalProductModel.cs" />
+    <Compile Include="4. Interface\Interfaces\IProductModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1. Basic\Student UML.vsdx" />
+    <None Include="2. Aggregation\Employee UML.vsdx" />
+    <None Include="3. Inheritance\Driver.vsdx" />
+    <None Include="4. Interface\Interface.vsdx" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj">
+      <Project>{e40114a7-6949-4166-b7e5-ed85d412cd39}</Project>
+      <Name>DesignPatterns</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

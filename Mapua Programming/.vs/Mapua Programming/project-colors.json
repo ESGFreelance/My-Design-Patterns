@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1adac680-5879-466f-bb4f-38e0e7e6fe16": {
+      "ProjectGuid": "1adac680-5879-466f-bb4f-38e0e7e6fe16",
+      "DisplayName": "Mapua Programming",
+      "ColorIndex": 0
+    },
+    "e40114a7-6949-4166-b7e5-ed85d412cd39": {
+      "ProjectGuid": "e40114a7-6949-4166-b7e5-ed85d412cd39",
+      "DisplayName": "DesignPatterns",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
