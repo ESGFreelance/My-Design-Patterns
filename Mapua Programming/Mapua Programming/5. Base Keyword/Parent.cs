@@ -28,7 +28,5 @@ namespace Mapua_Programming._5._Base_Keyword
             Console.WriteLine(base.value);
             Console.WriteLine(this.value);
         }
-
-
     }
 }

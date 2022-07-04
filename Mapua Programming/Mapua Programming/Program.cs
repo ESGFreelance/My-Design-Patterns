@@ -18,100 +18,100 @@ namespace Mapua_Programming
     {
         static void Main(string[] args)
         {
-            //#region 1. Basic
-            //Student firstStudent = new Student();
-            //firstStudent.name = "Edward Garcia";
+            #region 1. Basic
+            Student firstStudent = new Student();
+            firstStudent.name = "Edward Garcia";
 
-            //char[] c = firstStudent.name.ToCharArray();
-            //Array.Reverse(c);
-            //Console.WriteLine(new String(c));
+            char[] c = firstStudent.name.ToCharArray();
+            Array.Reverse(c);
+            Console.WriteLine(new String(c));
 
-            //Console.WriteLine("MANUAL\n");
-            ////Console.WriteLine(firstStudent.name.Length);
-            //for (int currentPosition = 0; currentPosition <= firstStudent.name.Length-1; currentPosition++)
-            //{
-            //    Console.Write(firstStudent.name[currentPosition]);
-            //}
+            Console.WriteLine("MANUAL\n");
+            //Console.WriteLine(firstStudent.name.Length);
+            for (int currentPosition = 0; currentPosition <= firstStudent.name.Length - 1; currentPosition++)
+            {
+                Console.Write(firstStudent.name[currentPosition]);
+            }
 
-            //var g = firstStudent.name.ToList().OrderByDescending(x=>x.ToString());
+            var g = firstStudent.name.ToList().OrderByDescending(x => x.ToString());
 
-            //Console.WriteLine(g.Min());
+            Console.WriteLine(g.Min());
 
-            //string words = "hello";
-            //byte[] m = Encoding.ASCII.GetBytes(words);
-            //Console.WriteLine(m.ToList().Min());
-            ////Console.WriteLine(((char)m.ToList().Min()).ToString());
-            //Console.WriteLine(m.Min());
-            //Console.WriteLine(((char)m.Min()));
+            string words = "hello";
+            byte[] m = Encoding.ASCII.GetBytes(words);
+            Console.WriteLine(m.ToList().Min());
+            //Console.WriteLine(((char)m.ToList().Min()).ToString());
+            Console.WriteLine(m.Min());
+            Console.WriteLine(((char)m.Min()));
 
 
-            //firstStudent.course = "IT-101";
-            //firstStudent.DisplayDetails();
-            //#endregion
+            firstStudent.course = "IT-101";
+            firstStudent.DisplayDetails();
+            #endregion
 
-            //#region 2. Aggregation
-            //Employee employee = new Employee("Edward Garcia", new Address("Makati","Philippines"));
-            //employee.Address.no = 55;
-            //employee.DisplayName();
-            //#endregion
+            #region 2. Aggregation
+            Employee employee = new Employee("Edward Garcia", new Address("Makati", "Philippines"));
+            employee.Address.no = 55;
+            employee.DisplayName();
+            #endregion
 
-            //#region 3. Inheritance
-            //Driver driver = new Driver(new Name("Edward","Garcia"),23,1.33, 3.14);
-            //Console.WriteLine($"Hello {driver.Name.GetName()}\nYour Gross Pay is {driver.GetGrossPay()}");
-            //driver.DisplayAge();
-            //#endregion
+            #region 3. Inheritance
+            Driver driver = new Driver(new Name("Edward", "Garcia"), 23, 1.33, 3.14);
+            Console.WriteLine($"Hello {driver.Name.GetName()}\nYour Gross Pay is {driver.GetGrossPay()}");
+            driver.DisplayAge();
+            #endregion
 
-            //#region 4. Interface
-            //List<IProductModel> cartProducts = AddSampleData();
-            //CustomerModel customer = AddSampleCustomer();
-            //DigitalProductModel dpm = new DigitalProductModel();
-            //foreach (IProductModel item in cartProducts)
-            //{
-            //    item.ShipItem(customer);
+            #region 4. Interface
+            List<IProductModel> cartProducts = AddSampleData();
+            CustomerModel customer = AddSampleCustomer();
+            DigitalProductModel dpm = new DigitalProductModel();
+            foreach (IProductModel item in cartProducts)
+            {
+                item.ShipItem(customer);
 
-            //    if (item is IDigitalProductModel digital)
-            //    {
-            //        dpm.TotalDownloadsLeft -= 1;
-            //        Console.WriteLine($"For the { digital.Title } you have { dpm.TotalDownloadsLeft } downloads left.");
-            //    }
+                if (item is IDigitalProductModel digital)
+                {
+                    dpm.TotalDownloadsLeft -= 1;
+                    Console.WriteLine($"For the { digital.Title } you have { dpm.TotalDownloadsLeft } downloads left.");
+                }
 
-            //}
-            //#endregion
+            }
+            #endregion
 
-            //#region Design Patterns
+            #region Design Patterns
 
-            //#region Creational Patterns
+            #region Creational Patterns
 
-            //    #region Singleton
-            //        Singleton obj1 = Singleton.GetInstance();
-            //        Singleton obj2 = Singleton.GetInstance();
-            //        Console.WriteLine($"{obj1.GetHashCode()}\n{obj2.GetHashCode()}");
-            //    #endregion
+            #region Singleton
+            Singleton obj1 = Singleton.GetInstance();
+            Singleton obj2 = Singleton.GetInstance();
+            Console.WriteLine($"{obj1.GetHashCode()}\n{obj2.GetHashCode()}");
+            #endregion
 
-            //    #region Factory Method
-            //        Console.WriteLine("App: Launched with the ConcreteCreator1.");
-            //        ClientCode(new ConcreteCreatorA());
+            #region Factory Method
+            Console.WriteLine("App: Launched with the ConcreteCreator1.");
+            ClientCode(new ConcreteCreatorA());
 
-            //        Console.WriteLine("App: Launched with the ConcreteCreator2.");
-            //        ClientCode(new ConcreteCreatorB());
+            Console.WriteLine("App: Launched with the ConcreteCreator2.");
+            ClientCode(new ConcreteCreatorB());
 
-            //var objA = new ConcreteCreatorA();
-            //Console.WriteLine(objA.SomeMethod());
+            var objA = new ConcreteCreatorA();
+            Console.WriteLine(objA.SomeMethod());
 
-            //    #endregion
+            #endregion
 
-            //#endregion
+            #endregion
 
-            //#region Behavioral Patterns
-            //#endregion
+            #region Behavioral Patterns
+            #endregion
 
-            //#region Structural Patterns
-            //#endregion
+            #region Structural Patterns
+            #endregion
 
-            //#endregion
+            #endregion
 
             #region 5. Base Keyword
-            Child c = new Child(5);
+            Child baseChild = new Child(5);
             #endregion
 
             #region --Terminator--
@@ -135,7 +135,7 @@ namespace Mapua_Programming
         private static List<IProductModel> AddSampleData()
         {
             List<IProductModel> sampleData = new List<IProductModel>();
-            sampleData.Add(new PhysicalProductModel { Title = "Computer Keyboard"});
+            sampleData.Add(new PhysicalProductModel { Title = "Computer Keyboard" });
             sampleData.Add(new PhysicalProductModel { Title = "Mousepad and Mouse" });
             sampleData.Add(new DigitalProductModel { Title = "MS Office 365 " });
             sampleData.Add(new DigitalProductModel { Title = "MS Visio 123 Professional" });
@@ -148,10 +148,8 @@ namespace Mapua_Programming
 
         static void ClientCode(Creator creator)
         {
-            // ...
             Console.WriteLine("Client: I'm not aware of the creator's class," +
                 "but it still works.\n" + creator.SomeMethod());
-            // ...
         }
 
     }
