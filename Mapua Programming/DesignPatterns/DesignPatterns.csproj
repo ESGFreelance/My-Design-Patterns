@@ -44,10 +44,14 @@
     <Compile Include="Creational\Factory Method\Factory.cs" />
     <Compile Include="Creational\Singleton\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Decorator\IPizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\" />
-    <Folder Include="Structural\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Creational\Factory Method\Factory.vsdx" />
+    <None Include="Creational\Singleton\Singleton.vsdx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

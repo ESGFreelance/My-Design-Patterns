@@ -28,3 +28,4 @@ namespace DesignPatterns.Creational.Singleton
 
 //Other Reference:
 //https://www.youtube.com/watch?v=DcbxFugk5pM&ab_channel=CodeRadiance
+//https://www.dofactory.com/net/singleton-design-pattern
