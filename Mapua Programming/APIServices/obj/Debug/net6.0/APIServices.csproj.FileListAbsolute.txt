@@ -1,0 +1,12 @@
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\bin\Debug\net6.0\APIServices.deps.json
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\bin\Debug\net6.0\APIServices.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\bin\Debug\net6.0\APIServices.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.csproj.AssemblyReference.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.AssemblyInfoInputs.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.AssemblyInfo.cs
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\refint\APIServices.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\APIServices.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\APIServices\obj\Debug\net6.0\ref\APIServices.dll

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mapua_Programming
 {
+    #region References
     using Mapua_Programming._1._Basic;
     using Mapua_Programming.Aggregation;
     using Mapua_Programming._3._Inheritance;
@@ -16,11 +17,20 @@ namespace Mapua_Programming
     using Mapua_Programming._5._Base_Keyword;
     using DesignPatterns.Structural.Decorator;
     using DesignPatterns.Behavioral.Template_Method;
-    internal class Program
+    #endregion
+
+    class TEMPLATE_Main
     {
         static void Main(string[] args)
         {
-            #region 1. Basic
+            Console.Read();
+        }
+    }
+
+    class MAIN_TUTORIAL_Basic
+    {
+        static void Main(string[] args)
+        {
             Student firstStudent = new Student();
             firstStudent.name = "Edward Garcia";
 
@@ -49,21 +59,37 @@ namespace Mapua_Programming
 
             firstStudent.course = "IT-101";
             firstStudent.DisplayDetails();
-            #endregion
+            Console.ReadLine();
+        }
+    }
 
-            #region 2. Aggregation
+    class MAIN_TUTORIAL_Aggregation
+    {
+        static void Main(string[] args)
+        {
             Employee employee = new Employee("Edward Garcia", new Address("Makati", "Philippines"));
             employee.Address.no = 55;
             employee.DisplayName();
-            #endregion
+            Console.Read();
+        }
+    }
 
-            #region 3. Inheritance
+    class MAIN_TUTORIAL_Inheritance
+    {
+        static void Main(string[] args)
+        {
             Driver driver = new Driver(new Name("Edward", "Garcia"), 23, 1.33, 3.14);
             Console.WriteLine($"Hello {driver.Name.GetName()}\nYour Gross Pay is {driver.GetGrossPay()}");
             driver.DisplayAge();
-            #endregion
+            Console.Read();
+        }
+    }
 
-            #region 4. Interface
+    class MAIN_TUTORIAL_Interface
+    {
+        static void Main(string[] args)
+        {
+
             List<IProductModel> cartProducts = AddSampleData();
             CustomerModel customer = AddSampleCustomer();
             DigitalProductModel dpm = new DigitalProductModel();
@@ -78,70 +104,9 @@ namespace Mapua_Programming
                 }
 
             }
-            #endregion
-
-            #region Design Patterns
-
-            #region Creational Patterns
-
-            #region Singleton
-            Singleton obj1 = Singleton.GetInstance();
-            Singleton obj2 = Singleton.GetInstance();
-            Console.WriteLine($"{obj1.GetHashCode()}\n{obj2.GetHashCode()}");
-            #endregion
-
-            #region Factory Method
-            Console.WriteLine("App: Launched with the ConcreteCreator1.");
-            ClientCode(new ConcreteCreatorA());
-
-            Console.WriteLine("App: Launched with the ConcreteCreator2.");
-            ClientCode(new ConcreteCreatorB());
-
-            var objA = new ConcreteCreatorA();
-            Console.WriteLine(objA.SomeMethod());
-
-            #endregion
-
-            #endregion
-
-            #region Behavioral Patterns
-            #region Template Method
-
-            Console.WriteLine();
-            ClientTemplate.ClientProcess(new ConcreteClassB());
-
-            Console.WriteLine();
-
-            ClientTemplate.ClientProcess(new ConcreteClassA());
-
-            Console.WriteLine();
-
-            #endregion
-            #endregion
-
-            #region Structural Patterns
-            #region Decorator
-            IPizza pizza = new Pizza();
-            IPizza tomatorDecorator = new TomatoDecorator(pizza);
-            IPizza meatDecorator = new MeatDecorator(tomatorDecorator);
-            IPizza baconDecorator = new BaconDecorator(meatDecorator);
-            PizzaDecorator pizzaDecorator = new PizzaDecorator(pizza);
-            Console.WriteLine(baconDecorator.GetPizza());
-            Console.WriteLine(pizzaDecorator.GetPizza());
-            #endregion  
-            #endregion
-
-            #endregion
-
-            #region 5. Base Keyword
-            Child baseChild = new Child(5);
-            #endregion
-
-            #region --Terminator--
             Console.Read();
-            #endregion
-        }
 
+        }
         private static CustomerModel AddSampleCustomer()
         {
             return new CustomerModel
@@ -169,12 +134,88 @@ namespace Mapua_Programming
         }
 
 
-        static void ClientCode(Creator creator)
+    }
+
+    class MAIN_TUTORIAL_BaseKeyword
+    {
+        static void Main(string[] args)
         {
-            Console.WriteLine("Client: I'm not aware of the creator's class," +
-                "but it still works.\n" + creator.SomeMethod());
+            Child baseChild = new Child(5);
+            Console.Read();
+        }
+    }
+
+    class MAIN_DesignPatterns
+    {
+        class Behavioral 
+        {
+            class PATTERN_TemplateMethod 
+            {
+                static void Main(string[] args)
+                {
+                    ClientTemplate.ClientProcess(new ConcreteClassB());
+
+                    Console.WriteLine();
+
+                    ClientTemplate.ClientProcess(new ConcreteClassA());
+
+                    Console.Read();
+                }
+            }
         }
 
+        class Structural
+        {
+            class PATTERN_Decorator
+            {
+                static void Main(string[] args)
+                {
+                    IPizza pizza = new Pizza();
+                    IPizza tomatorDecorator = new TomatoDecorator(pizza);
+                    IPizza meatDecorator = new MeatDecorator(tomatorDecorator);
+                    IPizza baconDecorator = new BaconDecorator(meatDecorator);
+                    PizzaDecorator pizzaDecorator = new PizzaDecorator(pizza);
+                    Console.WriteLine(baconDecorator.GetPizza());
+                    Console.WriteLine(pizzaDecorator.GetPizza());
+                    Console.Read();
+                }
+            }
+        }
+
+        class Creational
+        {
+            class PATTERN_Singleton
+            {
+                static void Main(string[] args)
+                {
+                    Singleton obj1 = Singleton.GetInstance();
+                    Singleton obj2 = Singleton.GetInstance();
+                    Console.WriteLine($"{obj1.GetHashCode()}\n{obj2.GetHashCode()}");
+                    Console.Read();
+                }
+            }
+
+            class PATTERN_FactoryMethod
+            {
+                static void Main(string[] args)
+                {
+                    Console.WriteLine("App: Launched with the ConcreteCreator1.");
+                    ClientCode(new ConcreteCreatorA());
+
+                    Console.WriteLine("App: Launched with the ConcreteCreator2.");
+                    ClientCode(new ConcreteCreatorB());
+
+                    var objA = new ConcreteCreatorA();
+                    Console.WriteLine(objA.SomeMethod());
+                    Console.Read();
+                }
+                static void ClientCode(Creator creator)
+                {
+                    Console.WriteLine("Client: I'm not aware of the creator's class," +
+                        "but it still works.\n" + creator.SomeMethod());
+                }
+            }
+        }
     }
 
 }
