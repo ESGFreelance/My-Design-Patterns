@@ -56,6 +56,7 @@
     <Compile Include="4. Interface\Interfaces\ICustomerModel.cs" />
     <Compile Include="4. Interface\Interfaces\IDigitalProductModel.cs" />
     <Compile Include="4. Interface\Interfaces\IProductModel.cs" />
+    <Compile Include="5. Base Keyword\Parent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,5 +73,6 @@
       <Name>DesignPatterns</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,3 +9,14 @@ C:\Users\Edward\source\repos\Mapua Programming\Mapua Programming\obj\Debug\Mapua
 C:\Users\Edward\source\repos\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.csproj.CopyComplete
 C:\Users\Edward\source\repos\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.exe
 C:\Users\Edward\source\repos\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\bin\Debug\Mapua Programming.exe.config
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\bin\Debug\Mapua Programming.exe
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\bin\Debug\Mapua Programming.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\bin\Debug\DesignPatterns.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\bin\Debug\DesignPatterns.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.csproj.AssemblyReference.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.csproj.SuggestedBindingRedirects.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.csproj.CopyComplete
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.exe
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Mapua Programming\obj\Debug\Mapua Programming.pdb

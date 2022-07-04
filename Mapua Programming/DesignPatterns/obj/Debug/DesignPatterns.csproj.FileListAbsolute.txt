@@ -4,3 +4,9 @@ C:\Users\Edward\source\repos\Mapua Programming\DesignPatterns\obj\Debug\DesignPa
 C:\Users\Edward\source\repos\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.dll
 C:\Users\Edward\source\repos\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.pdb
 C:\Users\Edward\source\repos\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.csproj.AssemblyReference.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\DesignPatterns\bin\Debug\DesignPatterns.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\DesignPatterns\bin\Debug\DesignPatterns.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.csproj.AssemblyReference.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\DesignPatterns\obj\Debug\DesignPatterns.pdb
