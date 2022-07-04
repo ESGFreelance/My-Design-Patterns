@@ -9,19 +9,22 @@ namespace DesignPatterns.Creational.Singleton
     public class Singleton
     {
         private static Singleton instance;
-        private Singleton()
+
+        public Singleton()
         {
-            
+
         }
 
-        public static Singleton GetInstance()
+        public Singleton GetInstance()
         {
             if (instance == null)
             {
                 instance = new Singleton();
             }
-
             return instance;
         }
     }
 }
+
+//Other Reference:
+//https://www.youtube.com/watch?v=DcbxFugk5pM&ab_channel=CodeRadiance
