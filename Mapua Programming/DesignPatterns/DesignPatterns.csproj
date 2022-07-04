@@ -52,6 +52,7 @@
   <ItemGroup>
     <None Include="Creational\Factory Method\Factory.vsdx" />
     <None Include="Creational\Singleton\Singleton.vsdx" />
+    <None Include="Structural\Decorator\Decorator.vsdx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

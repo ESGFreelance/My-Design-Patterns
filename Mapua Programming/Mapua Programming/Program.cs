@@ -14,6 +14,7 @@ namespace Mapua_Programming
     using DesignPatterns.Creational.Singleton;
     using DesignPatterns.Creational.Factory_Method;
     using Mapua_Programming._5._Base_Keyword;
+    using DesignPatterns.Structural.Decorator;
     internal class Program
     {
         static void Main(string[] args)
@@ -106,6 +107,18 @@ namespace Mapua_Programming
             #endregion
 
             #region Structural Patterns
+            #region Decorator
+
+            IPizza pizza = new Pizza();
+            IPizza tomatorDecorator = new TomatoDecorator(pizza);
+            IPizza meatDecorator = new MeatDecorator(tomatorDecorator);
+            IPizza baconDecorator = new BaconDecorator(meatDecorator);
+            PizzaDecorator pizzaDecorator = new PizzaDecorator(pizza);
+            Console.WriteLine(baconDecorator.GetPizza());
+            Console.WriteLine(pizzaDecorator.GetPizza());
+
+
+            #endregion  
             #endregion
 
             #endregion

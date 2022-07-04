@@ -6,25 +6,26 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural.Decorator
 {
-    //Base Interface
+    //Component
     public interface IPizza
     {
         string GetPizza();
     }
 
-    //Concrete Implementation
+    //ConcreteComponent
     public class Pizza : IPizza
     {
         public string GetPizza()
         {
-            return "This is a normal Pizza";
+            return "Normal Pizza";
         }
     }
 
-    //Base Decorator
+    //Creator
     public class PizzaDecorator : IPizza
     {
         private IPizza _pizza;
+
         public PizzaDecorator(IPizza pizza)
         {
             _pizza = pizza;
@@ -36,19 +37,44 @@ namespace DesignPatterns.Structural.Decorator
         }
     }
 
-    //Derived Decorator - cheese, tomato, meat, bacon, etc...
+    //ConcreteCreator - Tomato - Meat - Bacon
     public class TomatoDecorator : PizzaDecorator
     {
-        public TomatoDecorator(IPizza ingredient) : base (ingredient)
+        public TomatoDecorator(IPizza pizza) : base(pizza)
         {
-            
+
         }
 
         public override string GetPizza()
         {
-            return base.GetPizza()+" with cheese";
+            return base.GetPizza() + " w/ Tomato";
+        }
+    }
+
+    public class BaconDecorator : PizzaDecorator
+    {
+        public BaconDecorator(IPizza pizza) : base(pizza)
+        {
+
         }
 
+        public override string GetPizza()
+        {
+            return base.GetPizza() + " w/ Bacon";
+        }
+    }
+
+    public class MeatDecorator : PizzaDecorator
+    {
+        public MeatDecorator(IPizza pizza) : base(pizza)
+        {
+
+        }
+
+        public override string GetPizza()
+        {
+            return base.GetPizza() + " w/ Meat";
+        }
     }
 
 
