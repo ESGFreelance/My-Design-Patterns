@@ -108,7 +108,6 @@ namespace Mapua_Programming
 
             #region Structural Patterns
             #region Decorator
-
             IPizza pizza = new Pizza();
             IPizza tomatorDecorator = new TomatoDecorator(pizza);
             IPizza meatDecorator = new MeatDecorator(tomatorDecorator);
@@ -116,8 +115,6 @@ namespace Mapua_Programming
             PizzaDecorator pizzaDecorator = new PizzaDecorator(pizza);
             Console.WriteLine(baconDecorator.GetPizza());
             Console.WriteLine(pizzaDecorator.GetPizza());
-
-
             #endregion  
             #endregion
 

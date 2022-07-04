@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapua Programming", "Mapua 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{E40114A7-6949-4166-B7E5-ED85D412CD39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIServices", "APIServices\APIServices.csproj", "{2C546D1A-0EFA-4257-86C0-262D2089A97D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E40114A7-6949-4166-B7E5-ED85D412CD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E40114A7-6949-4166-B7E5-ED85D412CD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E40114A7-6949-4166-B7E5-ED85D412CD39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
