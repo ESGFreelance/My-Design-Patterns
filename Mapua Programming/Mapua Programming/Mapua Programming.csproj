@@ -63,6 +63,7 @@
     <Compile Include="4. Interface\Interfaces\IDigitalProductModel.cs" />
     <Compile Include="4. Interface\Interfaces\IProductModel.cs" />
     <Compile Include="5. Base Keyword\Parent.cs" />
+    <Compile Include="ignoretest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

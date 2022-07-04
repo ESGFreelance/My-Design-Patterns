@@ -24,6 +24,7 @@ namespace Mapua_Programming
         static void Main(string[] args)
         {
             Console.Read();
+
         }
     }
 
