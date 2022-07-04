@@ -15,6 +15,7 @@ namespace Mapua_Programming
     using DesignPatterns.Creational.Factory_Method;
     using Mapua_Programming._5._Base_Keyword;
     using DesignPatterns.Structural.Decorator;
+    using DesignPatterns.Behavioral.Template_Method;
     internal class Program
     {
         static void Main(string[] args)
@@ -104,6 +105,18 @@ namespace Mapua_Programming
             #endregion
 
             #region Behavioral Patterns
+            #region Template Method
+
+            Console.WriteLine();
+            ClientTemplate.ClientProcess(new ConcreteClassB());
+
+            Console.WriteLine();
+
+            ClientTemplate.ClientProcess(new ConcreteClassA());
+
+            Console.WriteLine();
+
+            #endregion
             #endregion
 
             #region Structural Patterns
