@@ -1,8 +1,4 @@
 # My Design Patterns
  This repository is my reference for the basic implementation of design patterns
-
+ NOTE: Go to properties -> startup object -> change which type of main program that you want to use.
  My-Design-Patterns\Mapua Programming\DesignPatterns
-
-# Structural Patterns
-# Behavioral Patterns
-# Creational Patterns
