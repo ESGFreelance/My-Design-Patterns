@@ -154,11 +154,28 @@ namespace Mapua_Programming
             {
                 static void Main(string[] args)
                 {
-                    ClientTemplate.ClientProcess(new ConcreteClassB());
+                    //ClientTemplate.ClientProcess(new ConcreteClassB());
+                    //Console.WriteLine();
+                    //ClientTemplate.ClientProcess(new ConcreteClassA());
+                    //Console.Read();
+                    //If you don't want to make a client class:
+                    Template templateMethodA = new ConcreteTemplateClassA();
+                    templateMethodA.TemplateMethod();
 
                     Console.WriteLine();
 
-                    ClientTemplate.ClientProcess(new ConcreteClassA());
+                    Template templateMethodB = new ConcreteTemplateClassB();
+                    templateMethodB.TemplateMethod();
+
+                    Console.WriteLine();
+                    
+                    Client_TemplateMethod.ExecuteTemplate(new ConcreteTemplateClassA());
+
+                    Console.WriteLine(
+                        );
+                    Client_TemplateMethod.ExecuteTemplate(new ConcreteTemplateClassB());
+
+
 
                     Console.Read();
                 }

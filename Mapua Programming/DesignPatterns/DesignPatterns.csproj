@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Behavioral\Template Method\Template Method.vsdx" />
     <None Include="Creational\Factory Method\Factory.vsdx" />
     <None Include="Creational\Singleton\Singleton.vsdx" />
     <None Include="Structural\Decorator\Decorator.vsdx" />

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Mapua_Programming.TEMPLATE_Main</StartupObject>
+    <StartupObject>Mapua_Programming.MAIN_DesignPatterns.Behavioral.PATTERN_TemplateMethod</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>2.ico</ApplicationIcon>
@@ -63,7 +63,6 @@
     <Compile Include="4. Interface\Interfaces\IDigitalProductModel.cs" />
     <Compile Include="4. Interface\Interfaces\IProductModel.cs" />
     <Compile Include="5. Base Keyword\Parent.cs" />
-    <Compile Include="ignoretest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,74 +8,94 @@ namespace DesignPatterns.Behavioral.Template_Method
 {
     public abstract class Template
     {
-        public void SkeletonMethod()
+        // The template method defines the skeleton of an algorithm.
+        public void TemplateMethod()
         {
-            this.Operation1();
-            this.Operation2();
-            this.Process1();
-            this.DoSomething();
-            this.FinalizeData();
+            this.BaseOperation1();
+            this.RequiredOperations1();
+            this.BaseOperation2();
+            this.Hook1();
+            this.RequiredOperations2();
+            this.BaseOperation3();
+            this.Hook2();
         }
 
-        protected void Operation1()
+        // These operations already have implementations.
+        protected void BaseOperation1()
         {
-            Console.WriteLine(nameof(Operation1));
+            Console.WriteLine("AbstractClass BaseOperation1");
         }
 
-        protected void Operation2()
+        protected void BaseOperation2()
         {
-            Console.WriteLine(nameof(Operation2));
+            Console.WriteLine("AbstractClass BaseOperation2");
         }
 
-        protected abstract void DoSomething();
-
-        protected abstract void FinalizeData();
-
-        protected virtual void Process1()
+        protected void BaseOperation3()
         {
-            
+            Console.WriteLine("AbstractClass BaseOperation3");
+        }
+
+        // These operations have to be implemented in subclasses.
+        protected abstract void RequiredOperations1();
+
+        protected abstract void RequiredOperations2();
+
+        // These are "hooks." Subclasses may override them, but it's not
+        // mandatory since the hooks already have default (but empty)
+        // implementation. Hooks provide additional extension points in some
+        // crucial places of the algorithm.
+        protected virtual void Hook1() 
+        {
+            Console.WriteLine("Hook 1 that may be overrided - This is a virtual method");
+        }
+
+        protected virtual void Hook2() 
+        { 
+            Console.WriteLine("Hook 2 that may be overrided - This is a virtual method"); 
         }
 
     }
 
-    public class ConcreteClassA : Template
+    public class ConcreteTemplateClassA : Template
     {
-        protected override void DoSomething()
+        protected override void RequiredOperations1()
         {
-            Console.WriteLine("Concrete Class A DoSomething()");
+            Console.WriteLine($"{nameof(ConcreteTemplateClassA)} - {nameof(RequiredOperations1)}");
         }
-
-        protected override void FinalizeData()
+        protected override void RequiredOperations2()
         {
-            Console.WriteLine("Concrete Class A FinalizeData()");
+            Console.WriteLine($"{nameof(ConcreteTemplateClassA)} - {nameof(RequiredOperations2)}");
         }
     }
 
-    public class ConcreteClassB : Template
+    public class ConcreteTemplateClassB : Template
     {
-        protected override void DoSomething()
+        protected override void RequiredOperations1()
         {
-            Console.WriteLine("Concrete Class B DoSomething()");
+            Console.WriteLine($"{nameof(ConcreteTemplateClassB)} - {nameof(RequiredOperations1)}");
+        }
+        protected override void RequiredOperations2()
+        {
+            Console.WriteLine($"{nameof(ConcreteTemplateClassB)} - {nameof(RequiredOperations2)}");
         }
 
-        protected override void FinalizeData()
+        protected override void Hook1()
         {
-            Console.WriteLine("Concrete Class B FinalizeData()");
+            Console.WriteLine($"{nameof(ConcreteTemplateClassB)} - I overrided {nameof(Hook1)}");
         }
-
-        protected override void Process1()
+        protected override void Hook2()
         {
-            Console.WriteLine("This is a process 1 for CCB");
+            Console.WriteLine($"{nameof(ConcreteTemplateClassB)} - I overrided {nameof(Hook1)}");
         }
     }
 
-    public class ClientTemplate
+    public class Client_TemplateMethod
     {
-        public static void ClientProcess(Template templateMethod)
+        public static void ExecuteTemplate(Template template)
         {
-            templateMethod.SkeletonMethod();
+            template.TemplateMethod();
         }
     }
-
 
 }
