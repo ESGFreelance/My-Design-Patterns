@@ -1,0 +1,12 @@
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\bin\Debug\net6.0\Object to Object Mapping.deps.json
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\bin\Debug\net6.0\Object to Object Mapping.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\bin\Debug\net6.0\Object to Object Mapping.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.csproj.AssemblyReference.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.AssemblyInfoInputs.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.AssemblyInfo.cs
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\refint\Object to Object Mapping.dll
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\Object to Object Mapping.pdb
+C:\Users\Edward\Documents\My-Design-Patterns\Mapua Programming\Object to Object Mapping\obj\Debug\net6.0\ref\Object to Object Mapping.dll
