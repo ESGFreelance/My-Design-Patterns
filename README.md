@@ -13,3 +13,5 @@
  # Design Patterns
  
  # Web Services
+ 
+ # Dapper Micro ORM + AutoMapper Integration
