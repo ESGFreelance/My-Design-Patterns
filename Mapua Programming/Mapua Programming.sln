@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapua Programming", "Mapua 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{E40114A7-6949-4166-B7E5-ED85D412CD39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIServices", "APIServices\APIServices.csproj", "{2C546D1A-0EFA-4257-86C0-262D2089A97D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIServices", "APIServices\APIServices.csproj", "{2C546D1A-0EFA-4257-86C0-262D2089A97D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID Principles", "SOLID Principles\SOLID Principles.csproj", "{BDB19A9B-A317-4406-8003-8C06D46D9631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object to Object Mapping", "Object to Object Mapping\Object to Object Mapping.csproj", "{86DBC69A-8183-4FD1-9678-E668B16E2835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C546D1A-0EFA-4257-86C0-262D2089A97D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB19A9B-A317-4406-8003-8C06D46D9631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB19A9B-A317-4406-8003-8C06D46D9631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB19A9B-A317-4406-8003-8C06D46D9631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB19A9B-A317-4406-8003-8C06D46D9631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DBC69A-8183-4FD1-9678-E668B16E2835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DBC69A-8183-4FD1-9678-E668B16E2835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DBC69A-8183-4FD1-9678-E668B16E2835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DBC69A-8183-4FD1-9678-E668B16E2835}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
