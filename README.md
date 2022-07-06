@@ -1,5 +1,5 @@
 # C# Referential Patterns
- This repository is my reference for the basic implementation of design patterns
+ This repository is my reference for the basic implementation of design patterns and other techniques so that if ever I forgot something then I will just go in this repository.
  
  NOTE: Go to properties -> startup object -> change which type of main program that you want to use. -> Run
  
